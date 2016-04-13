@@ -6,7 +6,7 @@
     <string name="login_lable_hint">手机号或用户名</string>
     <string name="login_button_text">登录</string>
     <string name="regist_button_text">注册</string>
-    <string name="title_activity_login">阿森大赛阿萨德阿萨德登录登录登录</string>
+    <string name="title_activity_login">登录</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">手机号或用户名</string>
@@ -19,7 +19,7 @@
     <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">"请用正常的用户名字."</string>
     <string name="debug">before</string>
-    <string name="title_activity_new_login">收货助手</string>
+    <string name="title_activity_new_login">送货助手</string>
     <string name="title_activity_input">Sign in</string>
     <string name="phone_hint">请输入取件者的手机号</string>
     <string name="express_number_hint">请输入快递编号</string>
