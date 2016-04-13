@@ -72,6 +72,7 @@ public class ItemDetailActivity extends AppCompatActivity {
                 save = view;
                 Intent intent = getIntent();
                 int pos = Integer.parseInt(intent.getStringExtra(ItemDetailFragment.ARG_ITEM_ID));
+                Log.v("verbose", "pos = " + pos);
                 makeGray(pos);
                 Log.v("debug", view.toString());
                 timer = new Timer();

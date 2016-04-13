@@ -51,8 +51,10 @@ public class ItemListActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "请选择你要取的快件", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                //Snackbar.make(view, "请选择你要取的快件", Snackbar.LENGTH_LONG)
+                //        .setAction("Action", null).show();
+                Intent intent = new Intent(ItemListActivity.this, InputActivity.class);
+                startActivity(intent);
             }
         });
         View recyclerView = findViewById(R.id.item_list);
@@ -80,7 +82,7 @@ public class ItemListActivity extends AppCompatActivity {
             public void run() {
                 //把网络访问的代码放在这里
                 try {
-                    String res = HttpRequest.sendGet("http://express.magica.tech/api/user/item_list", "");
+                    String res = HttpRequest.sendGet("http://express.magica.tech/api/mailer/item_list", "");
                     JSONObject jo = new JSONObject(res);
                     Log.v("verbose", res);
                     JSONArray items = (JSONArray) jo.get("items");

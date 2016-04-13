@@ -138,7 +138,7 @@ public class NewLoginActivity extends AppCompatActivity implements LoaderCallbac
     }
 
     private String getUserJson(String username, String password) {
-        return  HttpRequest.sendPost("http://express.magica.tech/api/user/sign_in", "username="+username+"&password=" + password);
+        return  HttpRequest.sendPost("http://express.magica.tech/api/mailer/sign_in", "username="+username+"&password=" + password);
     }
 
     private boolean mayRequestContacts() {
